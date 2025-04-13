@@ -1,0 +1,98 @@
+.product-actions-panel {
+  flex: 1;
+  background-color: #362c59;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.product-actions-panel__header {
+  text-align: right;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.product-actions-panel__header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.product-edit-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.product-edit-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.product-edit-form input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.375rem;
+  border: none;
+  background-color: #e5e7eb;
+}
+
+.product-actions-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.product-actions-buttons button,
+.machine-actions button {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: white;
+}
+
+.product-actions-buttons button:hover,
+.machine-actions button:hover {
+  opacity: 0.8;
+}
+
+.edit-button {
+  background-image: linear-gradient(to top, #4a6fa5, #6e9bd8);
+}
+
+.save-button {
+  background-image: linear-gradient(to top, #499d4b, #65d13e);
+}
+
+.cancel-button {
+  background-image: linear-gradient(to top, #8a8a8a, #b3b3b3);
+}
+
+.start-process-button {
+  background-image: linear-gradient(to top, #499d4b, #65d13e);
+}
+
+.complete-button {
+  background-image: linear-gradient(to top, #1e7ac5, #42a0f5);
+}
+
+.recycle-button {
+  background-image: linear-gradient(to top, #c86c00, #ff9a2e);
+}
+
+.machine-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.assign-machine-button {
+  background-image: linear-gradient(to top, #6b3fa0, #9b6ad8);
+}
+
+.show-machine-button {
+  background-image: linear-gradient(to top, #2460c0, #64a0ff);
+}

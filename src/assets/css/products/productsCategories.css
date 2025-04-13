@@ -1,0 +1,133 @@
+.products-categories {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.product-category {
+  flex: 1;
+  background-color: #362c59;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.product-category__header {
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #0477bf;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.product-category__header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Product Item - Updated to match queue_item style */
+.product-item {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #7dbeff, #c9e4ff);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover,
+.product-item--selected {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product-item__content {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem;
+}
+
+.product-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item__details {
+  text-align: start;
+  color: black;
+}
+
+.product-item__header {
+  display: flex;
+  margin-bottom: 4px;
+  font-weight: bold;
+  justify-content: start;
+}
+
+.product-item__units,
+.product-item__time,
+.product-item__machine {
+  text-align: right;
+}
+
+
+
+/* Progress Bar for in-process items */
+.product-item__progress-bar-container {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  background-color: #979797;
+  height: 1.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product-item__progress-bar-container p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  left: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.product-item__progress-bar {
+  background-image: linear-gradient(to top, #65d13e, #86e763);
+  height: 1.5rem;
+  border-radius: 5px;
+}
+
+.product-item__color-indicator {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-item__color-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Date badge */
+.product-item__date {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}

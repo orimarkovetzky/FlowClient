@@ -1,0 +1,109 @@
+.machine-card {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  height: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.machine-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.machine-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-icon-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.status-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.status-circle--error {
+  background-color: rgba(229, 62, 62, 0.15);
+  color: #e53e3e;
+}
+
+.status-circle--delayed {
+  background-color: rgba(227, 212, 45, 0.15);
+  color: #ebc012;
+}
+
+.status-circle--waiting {
+  background-color: rgba(90, 225, 66, 0.15);
+  color: #009113;
+}
+
+.machine-info {
+  flex-grow: 1;
+}
+
+.machine-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+}
+
+.current-product,
+.next-product {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.next-product {
+  color: #666;
+}
+
+.machine-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.timer-circle {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #4299e1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.timer-circle--delayed {
+  border-color: #dd6b20;
+}
+
+.timer-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.play-button-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #4299e1;
+  border-radius: 50%;
+}

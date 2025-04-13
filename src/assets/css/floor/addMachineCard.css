@@ -1,0 +1,46 @@
+.add-machine-card {
+    background-color: rgba(25, 25, 112, 0.05);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    min-height: 180px;
+  }
+  
+  .add-machine-card:hover {
+    background-color: rgba(25, 25, 112, 0.1);
+  }
+  
+  .add-machine-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .add-icon-circle {
+    width: 90px;
+    height: 90px;
+    background-color: #1e40af;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(30, 64, 175, 0.3);
+  }
+  
+  .add-icon {
+    color: white;
+  }
+  
+  .add-text {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1e40af;
+  }
+  
