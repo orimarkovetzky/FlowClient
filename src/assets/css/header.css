@@ -64,7 +64,6 @@
   background-color: #0366a3;
 }
 
-/* כפתור סגור */
 .menu__close {
   align-self: flex-end;
   font-size: 2rem;
@@ -73,7 +72,6 @@
   margin-bottom: 1rem;
 }
 
-/* כפתור יציאה */
 .menu__logout {
   background-color: #0477bf;
   color: white;

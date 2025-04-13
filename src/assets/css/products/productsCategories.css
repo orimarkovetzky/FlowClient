@@ -28,7 +28,6 @@
   font-size: 1.25rem;
 }
 
-/* Product Item - Updated to match queue_item style */
 .product-item {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -78,7 +77,6 @@
 
 
 
-/* Progress Bar for in-process items */
 .product-item__progress-bar-container {
   position: absolute;
   left: 20px;

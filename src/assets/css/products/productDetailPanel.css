@@ -106,7 +106,6 @@
   padding: 8px 15px;
   width: 40px;
   border-radius: 4px;
-  /* Make font size relative to element width */
   font-size: calc(40px * 0.3); /* 30% of the width */
 }
 
@@ -119,6 +118,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   margin-top: 10px;
 }
 
