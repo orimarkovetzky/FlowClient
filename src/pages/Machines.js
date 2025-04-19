@@ -4,6 +4,8 @@ import MachineCarousel from "../components/Machines/MachineCarousel";
 import QueuePanel from "../components/Machines/QueuePanel";
 import SettingsPanel from "../components/Machines/SettingsPanel";
 import { demoMachines } from "../constants/demoData";
+import { getAllMachines } from "../api/machinesApi";
+import { handleApiError } from "../api/handleError";
 
 export default function Machines() {
   // Data model for machines
@@ -14,6 +16,18 @@ export default function Machines() {
 
   // Get current machine
   const currentMachine = machines[currentMachineIndex];
+
+  useEffect(() => {
+    const fetchMachines = async () => {
+      try {
+        const data = await getAllMachines();
+        setMachines(data);
+      } catch (err) {
+        handleApiError(err);
+      }
+    };
+    fetchMachines();
+  }, []);
 
   // Navigate to previous machine
   const prevMachine = () => {
@@ -39,8 +53,6 @@ export default function Machines() {
       )
     );
   };
-
-
 
   const reportError = (machineId) => {
     alert(`דיווח על תקלה במכונה ${machineId}`);
