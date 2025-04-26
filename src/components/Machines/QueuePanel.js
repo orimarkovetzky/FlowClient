@@ -30,7 +30,6 @@ const DraggableQueueItem = ({ item, index, moveItem }) => {
   const iconColorField = item.isRing ? "borderColor" : "backgroundColor";
   const iconClass = item.isRing ? "ring" : "finger";
 
-
   const content = (
     <div className={itemClass}>
       <div className="queue-item__content">
@@ -109,14 +108,16 @@ export default function QueuePanel({ machine }) {
         <p className="queue-panel__count">
           סה"כ מוצרים: {products.length || 0}
         </p>
-        {products.map((item, index) => (
-          <DraggableQueueItem
-            key={item.id}
-            item={item}
-            index={index}
-            moveItem={moveItem}
-          />
-        ))}
+        <div className="queue-items">
+          {products.map((item, index) => (
+            <DraggableQueueItem
+              key={item.id}
+              item={item}
+              index={index}
+              moveItem={moveItem}
+            />
+          ))}
+        </div>
       </div>
     </DndProvider>
   );

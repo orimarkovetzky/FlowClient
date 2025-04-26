@@ -4,7 +4,7 @@ import MachineCarousel from "../components/Machines/MachineCarousel";
 import QueuePanel from "../components/Machines/QueuePanel";
 import SettingsPanel from "../components/Machines/SettingsPanel";
 import { demoMachines } from "../constants/demoData";
-import { getAllMachines } from "../api/machinesApi";
+import { getAllMachines, putReportError } from "../api/machinesApi";
 import { handleApiError } from "../api/handleError";
 
 export default function Machines() {
@@ -54,9 +54,10 @@ export default function Machines() {
     );
   };
 
-  const reportError = (machineId) => {
+  const reportError = async (machineId) => {
     alert(`דיווח על תקלה במכונה ${machineId}`);
-    // this would send data to an API
+    await putReportError(machineId);
+    
   };
 
   // Get more info function
